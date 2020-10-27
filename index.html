@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="text-center">
+    <!-- NAVBAR -->
+    <nav class="w-100 py-3 bg-dark text-white">
+      <h1>Guess The Number</h1>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="w-100 py-3 bg-primary text-white">
+      <h2>1? 2? 3? ...</h2>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container my-5">
+      <div class="col-sm-12 col-md-6 mx-auto">
+        <div class="form-group">
+          <input
+            type="number"
+            id="input-number"
+            class="form-control"
+            placeholder="Type a number..."
+          />
+        </div>
+
+        <div id="result"></div>
+
+        <div id="error" class="alert alert-danger" role="alert"></div>
+
+        <div class="w-100">
+          <button
+            type="button"
+            id="btn-guess"
+            class="btn btn-lg btn-dark my-md-0 my-2"
+          >
+            GUESS!
+          </button>
+
+          <button
+            type="button"
+            id="btn-restart"
+            class="btn btn-lg btn-primary my-md-0 my-2"
+          >
+            RESTART GAME!
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

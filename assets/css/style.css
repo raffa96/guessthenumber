@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #333333;
+}
+
+#input-number {
+  border: 2px solid #999999;
+}
+
+#error,
+#result {
+  display: none;
+}
+
+#input-number:focus,
+#btn-guess:focus,
+#btn-restart:focus {
+  box-shadow: none;
+  outline: none;
+}

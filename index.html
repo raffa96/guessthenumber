@@ -26,6 +26,12 @@
     <!-- MAIN -->
     <main class="container my-5">
       <div class="col-sm-12 col-md-6 mx-auto">
+        <div class="w-100 my-3">
+          <button type="button" id="btn-attempts" class="btn btn-dark btn-block">
+            Attempts: <span id="attempts" class="badge badge-light"></span>
+          </button>
+        </div>
+
         <div class="form-group">
           <input
             type="number"
@@ -35,11 +41,13 @@
           />
         </div>
 
-        <div id="result"></div>
+        <div id="success" class="alert alert-success" role="alert"></div>
+
+        <div id="result" class="alert alert-warning" role="alert"></div>
 
         <div id="error" class="alert alert-danger" role="alert"></div>
 
-        <div class="w-100">
+        <div class="w-100 my-3">
           <button
             type="button"
             id="btn-guess"
@@ -56,6 +64,8 @@
             RESTART GAME!
           </button>
         </div>
+
+        <ul id="history-list" class="w-100 my-3 list-group"></ul>
       </div>
     </main>
 

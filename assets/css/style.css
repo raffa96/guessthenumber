@@ -13,18 +13,21 @@ body {
   color: #333333;
 }
 
-#input-number {
-  border: 2px solid #999999;
+#success,
+#result,
+#error,
+#history-list {
+  display: none;
 }
 
-#error,
-#result {
-  display: none;
+#input-number:focus {
+  border: 2px solid #007bff;
 }
 
 #input-number:focus,
 #btn-guess:focus,
-#btn-restart:focus {
+#btn-restart:focus,
+#btn-attempts:focus {
   box-shadow: none;
   outline: none;
 }
